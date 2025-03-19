@@ -1,0 +1,111 @@
+*,
+::before,
+::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+
+}
+#navbar_area{
+    height: 100px;
+    background-color: rgb(253, 253, 253);
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+ul li{
+    display: inline-block;
+    position: relative;
+}
+ul li a{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    display: block;
+    padding: 10px 25px;
+    text-align: center;
+}
+ul li ul.dropdown li {
+    display: block;
+}
+ul li ul.dropdown {
+    width: 100%;
+    background: rgb(255, 255, 255);
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+ul a:hover{
+    color: red;
+}
+ul li:hover ul.dropdown{
+    display: block;
+    color: red;
+}
+.logo{
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ .logo h1{
+    color: rgb(34, 33, 33);
+ }
+ .logo span{
+    color: rgb(54, 54, 245);
+ }
+ input[type=text]{
+    border-radius: 30px;
+    padding: 8px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+ }
+ .icon{
+    display: flex;
+    gap: 20px;
+    position: relative;
+ }
+.srch{
+    position: absolute;
+    right: 55px;
+    bottom:10px;
+ }
+ i{
+    margin-top: 5px;
+ }
+ .heart{
+    font-size: 22px;
+    border: 1px solid rgb(104, 103, 103);
+    padding: 10px;
+    border-radius: 30px;
+ }
+.icon1{
+    display: flex;
+    gap: 20px;
+}
+.btn{
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    background-color: rgb(84, 84, 238);
+    border: none;
+    border-radius: 30px
+}
+.icon1 i{
+    border: 1px solid rgb(104, 103, 103);
+    padding: 10px;
+    border-radius: 30px;
+    color: black;
+    margin-top: 10px;
+    font-size: 20px;
+}
