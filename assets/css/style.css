@@ -417,9 +417,97 @@ ul li:hover ul.dropdown{
     font-size: 18px;
 }
 #latest_area h1{
-    font-size: 30px;
+    font-size: 40px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+#latest_area hr{
+    margin-top: 40px;
+}
+.product{
+    margin-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 70px;
+}
+.product img{
+    height: 100%;
+    width: 100%
+}
+.product .image{
+    width: 320px;
+}
+.caption{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-left: 80px;
+}
+.price2{
+    display: flex;
+    gap: 10px;
+    margin-left: 20px;
+    font-weight: 600;
+}
+.icon2{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.product .image1{
+    position: relative;
+    width: 320px;
+}
+.product .new{
+    position: absolute;
+    z-index: 1;
+    background-color: red;
+    width: 50px;
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    font-weight: 600;
+    left: 370px;
+    top: 1510px;  
+}
+.image2{
+    width: 320px;
+    position: relative;
+}
+.new1{
+    position: absolute;
+    z-index: 1;
+    background-color: red;
+    width: 50px;
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    font-weight: 600;
+    left: 1150px;
+    top: 1510px;
+}
+.image3{
+    position: relative;
+    width: 320px;
+}
+.new2{
+    position: absolute;
+    z-index: 1;
+    background-color: red;
+    width: 50px;
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    font-weight: 600;
+    left: 1150px;
+    top: 1990px;
+}
+
+
+
 /* latest area end */
 
 
