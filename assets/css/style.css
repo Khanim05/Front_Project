@@ -5,6 +5,7 @@
     margin: 0;
     box-sizing: border-box;
 }
+/* header area start */
 a{
     text-decoration: none;
 }
@@ -13,6 +14,11 @@ ul{
 
 }
 #navbar_area{
+    left: 0;
+    top:0;
+    width: 100%;
+    z-index: 1000;
+    position: fixed;
     height: 100px;
     background-color: rgb(253, 253, 253);
 }
@@ -132,7 +138,7 @@ ul li:hover ul.dropdown{
     font-weight: bold;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: white;
-    background-color: rgb(84, 84, 238);
+    background-color: rgb(84,84, 238 );
     border: none;
     border-radius: 30px;
 }
@@ -213,5 +219,104 @@ ul li:hover ul.dropdown{
         left: 180px;
         bottom: 20px;
     }
+}
+/* header area end */
 
+#main_area{
+    width: 100%;
+    height: 620px;
+    background-color: rgb(206, 225, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.image img{
+    max-width: 100%;
+    height: auto;
+    width: 600px;
+}
+.content{
+    max-width: 600px;
+}
+.content b{
+    color:rgb(54, 54, 245);
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+.content h1{
+    opacity: 0.9;
+    font-size: 70px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.content p{
+    opacity: 0.8;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.btn1{
+    font-size: 15px;
+    margin-top: 80px;
+    border: none;
+    background-color:rgb(54, 54, 245);
+    width: 120px;
+    padding: 5px;
+    height: 50px;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    border-radius: 40px;
+    cursor: pointer;
+}
+.btn1:hover{
+    background-color:rgb(122, 122, 230);
+    color: white;
+}
+.content{
+    margin-top: 100px;
+}
+@media screen and (max-width:1200px){
+    body,html{
+        overflow-x: hidden;
+    }
+    #main_area{
+        width: 100%;
+        height: 600px;
+        background-color: rgb(206, 225, 255);
+    }
+    .content h1{
+        font-size: 50px;
+    }
+    .content b{
+        font-size: 25px;
+    }
+}
+@media screen and (max-width:996px){
+    .image img{
+        margin-top: 90px;
+        width: 450px;
+    }
+    #main_area{
+        height: 500px;
+    }
+    .content h1{
+        font-size: 40px;
+    }
+    .content{
+        margin-right: 40px;
+    }
+}
+@media screen and (max-width:768px){
+    .image img{
+        display: none;
+    }
 }
