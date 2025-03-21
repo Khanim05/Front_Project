@@ -58,7 +58,8 @@ ul li ul.dropdown {
     display: none;
 }
 .dropdown a{
-    font-size: 12px;
+    text-align: start;
+    font-size:40px;
 }
 #navbar_area ul a:hover{
     color: red;
@@ -71,7 +72,7 @@ ul li:hover ul.dropdown{
     position: absolute;
     text-align: center;
     top: 20px;
-    left: 440px;
+    left: 420px;
     width: 40px;
     background-color: red;
     border-radius: 15px;
