@@ -5,6 +5,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 /* header area start */
 a{
     text-decoration: none;
@@ -852,8 +855,32 @@ input[type=email]{
     color: #0091ff;
 }
  /* end area end */
-
-
+ /* yuxari qayitmaq btni */
+ .scroll-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    text-decoration: none;
+  }
+  
+  .scroll-top button {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+  }
+  
+  .scroll-top button:hover {
+   opacity:1;
+  }
 
 
 
