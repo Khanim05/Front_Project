@@ -47,6 +47,10 @@ ul{
     padding: 10px 15px;
     text-align: center;
 }
+ul li ul.dropdown li a{
+    font-size: 15px !important;
+    text-align: left !important;
+}
 #navbar area ul li ul.dropdown li{
     display: block;
 }
