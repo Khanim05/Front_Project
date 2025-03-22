@@ -493,7 +493,6 @@ ul li:hover ul.dropdown{
 #end .ikon{
     display: flex;
     gap:10px;
-    font-size: 20px;
 }
 .end p{
     font-size: 20px;
@@ -503,3 +502,9 @@ ul li:hover ul.dropdown{
     color: #0091ff;
 }
  /* end area end */
+#single_area2{
+    margin-top: 20px;
+}
+#single_area2 img{
+    width: 80px;
+}
