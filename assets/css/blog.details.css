@@ -570,7 +570,7 @@ ul li:hover ul.dropdown{
 .right_single2_bottom{
     margin-top: 30px;
     width: 300px;
-    height: 400px;
+    height: 350px;
     margin-left: 55px;
     background-color: rgb(250, 248, 248);
 }
@@ -613,6 +613,297 @@ ul li:hover ul.dropdown{
     margin-left: 120px;
     margin-top: 50px; 
 }
+.comment_cmnt_post{
+    width: 650px;
+    margin-left: 120px;
+    margin-top: 50px;
+}
+.comment_area{
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+.comment_flx{
+    margin-top: 10px;
+    display: flex;
+    justify-content:space-between
+}
+.comment_text p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    opacity: 0.8;
+    line-height: 20px;
+}
+.comment_cmnt_post .comments_p{
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(14, 0, 92);
+
+}
+.comment_text a:nth-child(1){
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+.comment_text a:nth-child(1):hover{
+    color: red;
+}
+.comment_flx a:nth-last-child(1){
+    color: black;
+    opacity: 0.8;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.comment_flx a:nth-last-child(1):hover{
+    color: red;
+}
+#single_area3{
+    margin-top: 60px;
+}
+
+#single_area3 .flex2{
+    display: flex;
+}
+.comment_area2 img{
+    width:90px;
+}
+
+.comment_area2{
+    width: 650px;
+    margin-left: 120px;
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+.comment_flx2{
+    margin-top: 10px;
+    display: flex;
+    justify-content:space-between
+}
+.comment_text2 p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    opacity: 0.8;
+    line-height: 20px;
+}
+.comment_text2 a:nth-child(1){
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+.comment_text2 a:nth-child(1):hover{
+    color: red;
+}
+.comment_flx2 a:nth-last-child(1){
+    color: black;
+    opacity: 0.8;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.comment_flx2 a:nth-last-child(1):hover{
+    color: red;
+}
+
+.comment_area3 img{
+    width:90px;
+}
+
+.comment_area3{
+    width: 650px;
+    margin-left: 120px;
+    margin-top: 50px;
+    display: flex;
+    gap: 20px;
+}
+.comment_flx3{
+    margin-top: 10px;
+    display: flex;
+    justify-content:space-between
+}
+.comment_text3 p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    opacity: 0.8;
+    line-height: 20px;
+}
+.comment_text3 a:nth-child(1){
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+.comment_text3 a:nth-child(1):hover{
+    color: red;
+}
+.comment_flx3 a:nth-last-child(1){
+    color: black;
+    opacity: 0.8;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.comment_flx3 a:nth-last-child(1):hover{
+    color: red;
+}
+
+.right_single3{
+    margin-left: 120px;
+}
+.single_input3 input[type=text]{
+    margin-top: 20px;
+    width: 300px;
+    height: 50px;
+    padding: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+}
+.single_right_top3{
+    padding: 20px;
+    width: 350px;
+    height: 250px;
+    background-color: rgb(250, 248, 248);
+    text-align: center;
+}
+.single_right_top3 hr{
+    margin-top: 20px
+}
+.single_right_top3 p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: start;
+
+}
+.single_btn3{
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 20px;
+    border: none;
+    width: 300px;
+    height: 50px;
+    background-color: rgb(40, 40, 223);
+}
+.single_btn3:hover{
+    border: 2px solid rgb(40,40,223);
+    background-color: transparent;
+    color: rgb(40,40,223);
+}
+#single_area3 hr{
+    width: 650px;
+    margin-left: 120px;
+    margin-top: 90px;
+}
+#inputs_area{
+    margin-top: 70px;
+    margin-left: 120px;
+}
+.name_email{
+    margin-top: 20px;
+}
+.name_email input[type=text]{
+    height: 48px;
+    border: 1px solid rgb(199, 199, 199);
+    font-size: 13px;
+    padding-left: 18px;
+    width: 389px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.name_email input[type=email]{
+    margin-left: 20px;
+    height: 48px;
+    border: 1px solid rgb(199, 199, 199);
+    font-size: 13px;
+    padding-left: 18px;
+    width: 389px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#inputs_area p{
+    color: rgb(14, 0, 92);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+#estore_area{
+    margin-top: 100px;
+}
+#estore_area .container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.estore_area{
+    display: flex;
+    gap: 10px;
+    justify-content: space-between
+    ;
+}
+.estore1{
+    width: 250px;
+}
+.estore2{
+    margin-top: 8px;
+    width: 250px;
+}
+.estore-links{
+    color: black;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+.estore-links a{
+    color:  rgb(122, 122, 122);
+}
+.estore-links a:hover{
+    color: black;
+}
+.estore2 p{
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+ }
+.estore1 h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 35px;
+}
+.estore1 span{
+    color: rgb(37, 56, 223);
+}
+.estore1 p{
+    margin-top: 30px;
+    line-height: 25px;
+    font-size: 20px;
+    color:  rgb(122, 122, 122);
+}
+ /* end area start */
+#end{
+    height: 300px;
+    margin-top: 150px;
+}
+#end .container{
+    margin: 0 auto;
+    max-width: 1200px;
+}
+#end .end{
+    display: flex;
+    justify-content: space-between;
+}
+#end .ikon{
+    display: flex;
+    gap:10px;
+    font-size: 15px;
+}
+.end p{
+    font-size: 20px;
+    color:  rgb(122, 122, 122);  
+}
+.end p a{
+    color: #0091ff;
+}
+ /* end area end */
+
+
+
+
+
+
+
+
+
 
 
 
