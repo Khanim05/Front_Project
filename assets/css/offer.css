@@ -68,6 +68,7 @@ ul li ul.dropdown {
     color: red;
 }
 ul li:hover ul.dropdown{
+    border-top: 2px solid red !important;
     display: block;
     color: red;
 }
