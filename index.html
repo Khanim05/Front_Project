@@ -62,9 +62,37 @@
                 <div class="sign"><button class="btn">Sign in</button></div>
                 <div class="count1">02</div>
             </div>
-            <div class="sidebar">
+            <div class="sidebar" onclick="toggleMenu()">
                 <span class="menu">Menu</span>
                 <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+                <ul id="sidebar-menu" class="sidebar-menu">
+                    <li><a href="index.html"></a></li>
+                    <li><a href="#"></a></li>
+                    <li class="dropdown-item"><a href="product.list.html">Latest</a>
+                        <ul class="dropdown">
+                            <li><a href="product.list.html">Product List</a></li>
+                            <li><a href="product.details.html">Product Details</a></li>
+               </ul>
+               </li>
+                    <li class="dropdown-item"><a href="blog.html">Blog</a>
+                    <ul class="dropdown">
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="blog.details.html">Blog Details</a></li>
+                    </ul>
+                    </li>
+                    <li class="dropdown-item"><a href="shopping.cart.html">Pages</a>
+                    <ul class="dropdown">
+                     <li><a href="login.html">Login</a></li>
+                     <li><a href="">Card</a></li>
+                     <li><a href="">Element</a></li>
+                     <li><a href="">About</a></li>
+                     <li><a href="">Confirmation</a></li>
+                     <li><a href="shopping.cart.html">Shopping card</a></li>
+                     <li><a href="">Product Checkout</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+                </ul>
             </div>
         </div>
      </section>
@@ -77,7 +105,7 @@
     <a href="#top" class="scroll-top">
     <button>↑</button>
     </a>
-        <section id="main_area">
+        <section id="main_area"> 
             <div class="container main">
                 <div data-aos="fade-up-left"></div>
 
@@ -118,14 +146,12 @@
                         <b>New Collection</b>
                     </div>
                 </div>
-
-
             </div>
         </div>
     </section>
     
 
-    <section id="latest_area">
+    <!-- <section id="latest_area">
         <div class="container area">
             <div class="latest_logo"><h1>Latest Products</h1></div>
             <div class="latest_list">
@@ -323,10 +349,10 @@
         </div>
     </section>
 </main>
-<!-- main hisse son --> 
+<!- main hisse son -->  
 
 <!-- footer start -->
-<footer>
+<!-- <footer>
 <section id="estore_area">
     <div class="container estore_area">
         <div class="estore1">
@@ -375,8 +401,21 @@
     </div>
 </section>
 </footer>
-<!-- footer end -->
+footer end --> 
     
-
+<script>
+    function toggleMenu() {
+        var menu = document.getElementById("sidebar-menu");
+        menu.classList.toggle("active");
+    }
+    
+    // Dropdown-ların açılıb bağlanması üçün
+    document.querySelectorAll(".dropdown-item > a").forEach(item => {
+        item.addEventListener("click", function(event) {
+            event.preventDefault(); // Linkin səhifəni yeniləməsinin qarşısını alır
+            this.parentElement.classList.toggle("active");
+        });
+    });
+    </script>
 </body>
 </html>

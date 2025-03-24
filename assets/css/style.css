@@ -55,11 +55,13 @@ ul li ul.dropdown li a{
     display: block;
 }
 ul li ul.dropdown {
+    visibility: hidden;
     width: 100px;
     background: rgb(248, 248, 248);
     position: absolute;
     z-index: 999;
     display: none;
+    padding: 10px 0;
 }
 .dropdown a{
     text-align: start;
@@ -69,9 +71,36 @@ ul li ul.dropdown {
     color: red;
 }
 ul li:hover ul.dropdown{
+    opacity: 1;
+    visibility: visible;
     border-top: 2px solid red !important;
     display: block;
+    
     color: red;
+}
+.sidebar-menu{
+    position: fixed;
+    top: 100px;
+    left: 0;
+    width: 250px;
+    height: auto;
+    background-color: rgb(54, 54, 54);
+    color: white;
+    display: none;
+    flex-direction: column;
+    padding: 10px;
+}
+.sidebar-menu.active{
+    display: flex;
+}
+.sidebar-menu a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+.sidebar-menu a:hover{
+    background: rgb(122, 122, 230);
 }
 .hot{
     position: absolute;
@@ -210,7 +239,9 @@ ul li:hover ul.dropdown{
         border-radius: 7px;
         padding: 10px;
         margin-top: 50px;
+        cursor: pointer;
     }
+    
     .sign{
         display: none;
     }

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e39f4ce23a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/shopping.cart.css">
+    <title>Estore</title>
+</head>
+    <!-- header area start -->
+    <body>
+    <header>
+        <!-- yuxari qayitmaq btn -->
+        <a id="top"></a>
+
+     <section id="navbar_area">
+        <div class="container nav">
+            <div class="logo"><h1>Estore<span>.</span></h1></div>
+            <div class="list">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Categori</a></li>
+                    <li>
+                        <a href="" class="txt">Latest</a>
+                        <ul class="dropdown">
+                           <li><a href="product.list.html">Product List</a></li>
+                           <li><a href="product.details.html">Product Details</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">Blog</a>
+                        <ul class="dropdown">
+                           <li><a href="blog.html">Blog</a></li>
+                           <li><a href="blog.details.html">Blog Details</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">Pages</a>
+                        <ul class="dropdown">
+                           <li><a href="login.html">Login</a></li>
+                           <li><a href="">Card</a></li>
+                           <li><a href="">Element</a></li>
+                           <li><a href="">About</a></li>
+                           <li><a href="">Confirmation</a></li>
+                           <li><a href="shopping.cart.html">Shopping cart</a></li>
+                           <li><a href="">Product Checkout</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="hot">Hot</div>
+            </div>
+            <div class="icon">
+                <div class="input"><input type="text" placeholder="Search Products"></div>
+                <i class="fas fa-search special-tag srch"></i>
+                <i class="far fa-heart heart"></i> 
+                <div class="count">02</div>
+            </div>
+            <div class="icon1">
+                 <div class="shop"><a href=""><i class="fas fa-shopping-cart shop"></i>
+                </a></div>
+                <div class="sign"><button class="btn">Sign in</button></div>
+                <div class="count1">02</div>
+            </div>
+            <div class="sidebar" onclick="toggleMenu()">
+                <span class="menu">Menu</span>
+                <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+                <ul id="sidebar-menu" class="sidebar-menu">
+                    <li><a href="index.html"></a></li>
+                    <li><a href="#"></a></li>
+                    <li class="dropdown-item"><a href="product.list.html">Latest</a>
+                        <ul class="dropdown">
+                            <li><a href="product.list.html">Product List</a></li>
+                            <li><a href="product.details.html">Product Details</a></li>
+               </ul>
+               </li>
+                    <li class="dropdown-item"><a href="blog.html">Blog</a>
+                    <ul class="dropdown">
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="blog.details.html">Blog Details</a></li>
+                    </ul>
+                    </li>
+                    <li class="dropdown-item"><a href="shopping.cart.html">Pages</a>
+                    <ul class="dropdown">
+                     <li><a href="login.html">Login</a></li>
+                     <li><a href="">Card</a></li>
+                     <li><a href="">Element</a></li>
+                     <li><a href="">About</a></li>
+                     <li><a href="">Confirmation</a></li>
+                     <li><a href="shopping.cart.html">Shopping card</a></li>
+                     <li><a href="">Product Checkout</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+     </section>
+     <a href="#top" class="scroll-top">
+        <button>↑</button>
+    </a>
+    </header>
+    <main>
+        <section id="blog_img">
+            <div class="container blog">
+                <h1 class="blog_text">Card List</h1>
+            </div>
+        </section>
+        <section id="card_navbar">
+            <div class="container card_navbar">
+                <div class="prduct-logo">Product</div>
+                <ul>
+                    <li>Price</li>
+                    <li>Quantity</li>
+                    <li>Total</li>
+                </ul>
+            </div>
+          <hr>
+        </section>
+        <section id="card_post">
+            <div class="container card_post">
+                <div class="post_image"><img src="assets/image/shopcard_1.png" alt=""></div>
+                <div class="post_text">
+                    <p>Minimalistic shop for multipurpose use</p>
+                <div class="post_content">
+                    <p style="margin-top: 15px;">$360</p>
+                    <div class="post_input">
+                        <input type="text" placeholder="0">
+                        <div class="div">
+                        <div class="div1"><i class="fa-solid fa-plus" style="color: #3f3f3f;"></i>
+                        </div>
+                        <hr>
+                        <div class="div2"><i class="fa-solid fa-minus" style="color: #3f3f3f;"></i></div>
+                        </div>
+                    </div>
+                    <p style="margin-top: 15px;">$720.00</p>	
+                </div>
+                </div>
+            </div>
+            <hr style="margin-top: 40px;">
+            <div class="container card_post">
+                <div class="post_image" style="margin-top: 40px;"><img src="assets/image/shopcardl_2.png" alt=""></div>
+                <div class="post_text">
+                    <p style="margin-top: 20px;">Minimalistic shop for multipurpose use</p>
+                <div class="post_content">
+                    <p style="margin-top: 15px;">$360</p>
+                    <div class="post_input">
+                        <input type="text" placeholder="0">
+                        <div class="div">
+                        <div class="div1"><i class="fa-solid fa-plus" style="color: #3f3f3f;"></i>
+                        </div>
+                        <hr>
+                        <div class="div2"><i class="fa-solid fa-minus" style="color: #3f3f3f;"></i></div>
+                        </div>
+                    </div>
+                    <p style="margin-top: 15px;">$720.00</p>	
+                </div>
+                </div>
+            </div>
+            <hr style="margin-top: 40px;">
+            <div class="right">
+                <div><button>Update Cart</button></div>
+                <div><button>Close Coupon</button></div>
+            </div>
+            <hr style="margin-top: 25px;">
+            <div class="subtotal">
+                <div><p>Subtotal</p></div>
+                <div><p>$2160.00</p></div>
+            </div>
+            <hr style="margin-top: 25px;">
+            <div class="shipping">
+                <div><p>Shipping</p></div>
+                <ul>
+                    <li>                        
+                        <label for="flat5">Flat Rate: $5</label>
+                        <input type="radio" name="shipping" id="flat5">
+                    </li>
+                    <li>
+                        
+                        <label for="free">Free Shipping</label>
+                        <input type="radio" name="shipping" id="free">
+                    </li>
+                    <li>
+                        
+                        <label for="flat10">Flat Rate: $10.00</label>
+                        <input type="radio" name="shipping" id="flat10">
+                    </li>
+                    <li>
+                        
+                        <label for="local">Local Delivery: $2.00</label>
+                        <input type="radio" name="shipping" id="local">
+                    </li>
+            </ul>
+            </div>
+            <div class="select">
+                <div class="calculate"><span>Calculate Shipping</span><i class="fa fa-caret-down"></i></div>
+                <div class="select1">
+                    <select class="tst" >
+                        <option selected value
+                        >Bangladesh</option>
+                        <option>India</option>
+                        <option>Pakistan</option>
+                      </select></div>
+                      <div class="select2">
+                      <select class="tst" >
+                        <option selected value
+                        >Select a state</option>
+                        <option>Select a state</option>
+                        <option>Select a state</option>
+                      </select></div>
+                
+                <div class="input">
+                <input type="text" placeholder="Postcode/Zipcode"></div>
+                <button>Update Details</button>
+            </div>
+            <hr style="margin-top: 20px;">
+            <div class="buttons">
+                <button>Contine Shopping</button>
+                <button>Proceed to Chechkout</button>
+            </div>
+        </section>
+    </main>
+    <!-- footer start -->
+<footer>
+<section id="estore_area">
+    <div class="container estore_area">
+        <div class="estore1">
+            <h1>Estore <span>.</span></h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore.</p>
+        </div>
+        <div class="estore2">
+            <p>Quick Links</p>
+            <div class="estore-links">
+                <a href="">About</a>
+                <a href="">Offers</a>
+                <a href="">Get Coupon</a>
+                <a href="">Contact us</a>
+            </div>
+        </div>
+        <div class="estore2">
+            <p>New Products</p>
+            <div class="estore-links">
+                <a href="">Woman Cloth</a>
+                <a href="">Fashion Accessories</a>
+                <a href="">Man Accessories</a>
+                <a href="">Rubber made Toys</a>
+            </div>
+        </div>
+        <div class="estore2">
+            <p>Support</p>
+            <div class="estore-links">
+                <a href="">Frequently Asked Questions</a>
+                <a href="">Terms & Conditions</a>
+                <a href="">Privacy Policy</a>
+                <a href="">Report a Payment Issue</a>
+            </div>
+        </div>
+     </div>
+</section>
+
+<section id="end">
+    <div class="container end">
+        <div><p>Copyright ©2025 All rights reserved | This template is made with <i class="fa-regular fa-heart" style="color: #0091ff;"></i> by <a href="">Colorlib</a></p></div>
+        <div class="ikon">
+            <a href=""><i class="fa-brands fa-twitter" style="color: #000000;"></i></a>
+            <a href=""><i class="fa-brands fa-facebook-f" style="color: #000000;"></i></a>
+            <a href=""><i class="fa-brands fa-behance" style="color: #000000;"></i></a>
+            <a href=""><i class="fa-solid fa-globe" style="color: #000000;"></i></a>
+        </div>
+    </div>
+</section>
+</footer>
+<!-- footer end --> 
+   
