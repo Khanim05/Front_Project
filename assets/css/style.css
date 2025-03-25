@@ -257,11 +257,11 @@ ul li:hover ul.dropdown{
     .shop{
       position: absolute;
       bottom: 1px;
-      left: 70px;
+      left: 65px;
     }
     .count1{
         position: absolute;
-        left: 180px;
+        left: 165px;
         bottom: 20px;
     }
 
@@ -895,7 +895,7 @@ opacity: 0.8;
     }
     .offer_btn{
         position: absolute;
-        left: 263px;
+        left: 260px;
     }
 }
 
