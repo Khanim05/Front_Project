@@ -234,11 +234,17 @@ ul li:hover ul.dropdown{
     display: none;
 }
 @media screen and (min-width:1200px){
+    body,html{
+        overflow-x: hidden;
+    }
     .list{
         margin-left: 20px;
     }
 }
 @media screen and (max-width:1200px){
+    body,html{
+        overflow-x: hidden;
+    }
     .list{
         margin-left: 20px;
     }
@@ -586,6 +592,9 @@ img{
     gap:10px;
     font-size: 20px;
 }
+.ikon i:hover{
+    color: blue;
+}
 .end p{
     font-size: 20px;
     color:  rgb(122, 122, 122);  
@@ -595,4 +604,3 @@ img{
 }
  /* end area end */
 
- 
