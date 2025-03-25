@@ -918,8 +918,8 @@ opacity: 0.8;
     }
     .offer_btn{
         position: absolute;
-        left: 292px;
-        padding: 15px;
+        left: 282px;
+        padding: 17px 20px;
         top: 5px;
     }
 }
