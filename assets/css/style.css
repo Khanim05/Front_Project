@@ -901,7 +901,7 @@ opacity: 0.8;
             left: 500px;
         }
 }
-@media screen and (max-width:668px){
+@media screen and (max-width:567px){
     #offer_area input[type=email]{
         padding: 19px 100px;
     }
@@ -910,9 +910,22 @@ opacity: 0.8;
     }
     .offer_btn{
         position: absolute;
-        left: 260px;
+        left: 262px;
     }
 }
+@media screen and (max-width:400px){
+    #offer_area input[type=email]{
+        padding: 19px 70px;
+    }
+    .offer .form{
+        position: relative;
+    }
+    .offer_btn{
+        position: absolute;
+        left: 200px;
+    }
+}
+
 
 
 /* best area end */
