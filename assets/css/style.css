@@ -84,7 +84,7 @@ ul li:hover ul.dropdown{
     width: 250px;
     height: auto;
     background-color: rgb(54, 54, 54);
-    color: white;
+    color: rgb(255, 255, 255);
     display: none;
     flex-direction: column;
     padding: 10px;
@@ -93,13 +93,16 @@ ul li:hover ul.dropdown{
     display: flex;
 }
 .sidebar-menu a{
-    color: white;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     padding: 10px;
     display: block;
 }
+.sidebar-menu li a{
+    color: white;
+}
 .sidebar-menu a:hover{
-    background: rgb(122, 122, 230);
+    background-color: rgb(248, 248, 248)
 }
 .hot{
     position: absolute;
@@ -915,7 +918,9 @@ opacity: 0.8;
     }
     .offer_btn{
         position: absolute;
-        left: 262px;
+        left: 292px;
+        padding: 15px;
+        top: 5px;
     }
 }
 @media screen and (max-width:420px){
