@@ -365,6 +365,9 @@ ul li:hover ul.dropdown{
    
 }
 @media screen and (max-width:768px){
+    .scroll-top{
+        display: none;
+    }
      #main_area .image img{
         display: none;
     }
@@ -376,7 +379,6 @@ ul li:hover ul.dropdown{
     }
     .area ul{
         margin-top: 20px;
-        margin-left: 60px;
     }
 }
 /* main area end */
@@ -632,6 +634,9 @@ ul li:hover ul.dropdown{
     }
     #man_area .content_man h1{
         font-size: 15px;
+    }
+    #latest_area ul{
+        margin-left: 100px;
     }
 
 }
@@ -913,16 +918,19 @@ opacity: 0.8;
         left: 262px;
     }
 }
-@media screen and (max-width:400px){
+@media screen and (max-width:420px){
     #offer_area input[type=email]{
-        padding: 19px 70px;
+        padding: 10px 50px;
+        font-size: 13px;
+        
     }
     .offer .form{
         position: relative;
     }
     .offer_btn{
         position: absolute;
-        left: 200px;
+        left: 168px;
+        padding: 8px 6px;
     }
 }
 
