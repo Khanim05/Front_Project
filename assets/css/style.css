@@ -581,6 +581,12 @@ ul li:hover ul.dropdown{
     body,html{
         overflow-x: hidden;
     }
+    #latest_area .product{
+        justify-content: center;
+    }
+    .product img{
+        width: 300px;
+    }
    #latest_area .area{
     padding: 0 30px;
    }
@@ -619,6 +625,15 @@ ul li:hover ul.dropdown{
         margin-top: 0;
         margin-left: 170px;
     }       
+}
+@media screen and (max-width:576px){
+    #man_area{
+        height: 400px !important;
+    }
+    #man_area .content_man h1{
+        font-size: 15px;
+    }
+
 }
 
 /* latest area end */
