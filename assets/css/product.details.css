@@ -54,7 +54,7 @@ ul{
     height: 100px;
     background-color: rgb(253, 253, 253);
 }
-#navbar_area .container{
+.container{
     max-width: 1300px;
     margin: 0 auto;
     height: 100%;
@@ -66,7 +66,6 @@ ul{
 }
 #navbar_area ul li{
     display: inline-block;
-    position: relative;
 }
 #navbar_area ul li a{
     font-size: 17px;
@@ -84,26 +83,61 @@ ul li ul.dropdown li a{
     display: block;
 }
 ul li ul.dropdown {
-    width: 100px;
+    visibility: hidden;
+    width: 120px;
     background: rgb(248, 248, 248);
     position: absolute;
     z-index: 999;
-    padding: 10px 0;
     display: none;
+    padding: 10px 0;
+}
+.dropdown a{
+    text-align: start;
+    font-size:40px;
 }
 #navbar_area ul a:hover{
     color: red;
 }
 ul li:hover ul.dropdown{
+    opacity: 1;
+    visibility: visible;
     border-top: 2px solid red !important;
     display: block;
+    
     color: red;
+}
+.sidebar-menu{
+    position: fixed;
+    top: 100px;
+    left: 0;
+    width: 250px;
+    height: auto;
+    background-color: rgb(54, 54, 54);
+    color: rgb(255, 255, 255);
+    display: none;
+    flex-direction: column;
+    padding: 10px;
+}
+.sidebar-menu.active{
+    display: flex;
+}
+.sidebar-menu a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+.sidebar-menu li a{
+    color: white;
+}
+.sidebar-menu a:hover{
+    background-color: rgb(248, 248, 248)
 }
 .hot{
     position: absolute;
     text-align: center;
-    top: 20px;
-    left: 420px;
+    bottom: 35px;
+    left: 220px;
     width: 40px;
     background-color: red;
     border-radius: 15px;
@@ -113,19 +147,20 @@ ul li:hover ul.dropdown{
    }
 .list{
     margin-left: 100px;
+    position: relative;
 }
 .logo{
     font-size: 30px;
     font-weight: bold;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
- #navbar_area .logo h1{
+ .logo h1{
     color: rgb(70, 69, 69);
  }
  .logo span{
     color: rgb(54, 54, 245);
  }
- #navbar_area input[type=text]{
+ input[type=text]{
     border-radius: 30px;
     padding: 8px;
     margin-top: 15px;
@@ -173,7 +208,7 @@ ul li:hover ul.dropdown{
     font-weight: bold;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: white;
-    background-color:rgb(0, 68, 255);
+    background-color: rgb(84,84, 238 );
     border: none;
     border-radius: 30px;
     cursor: pointer;
@@ -217,6 +252,9 @@ ul li:hover ul.dropdown{
     .icon{
         display: none;
     }
+    .nav{
+        padding: 0 40px;
+    }
 }
 @media screen and (max-width:996px){
     body,html{
@@ -236,7 +274,9 @@ ul li:hover ul.dropdown{
         border-radius: 7px;
         padding: 10px;
         margin-top: 50px;
+        cursor: pointer;
     }
+    
     .sign{
         display: none;
     }
@@ -249,15 +289,15 @@ ul li:hover ul.dropdown{
     .shop{
       position: absolute;
       bottom: 1px;
-      left: 70px;
+      left: 65px;
     }
     .count1{
         position: absolute;
-        left: 180px;
+        left: 165px;
         bottom: 20px;
     }
-}
 
+}
 /* product start */
 #product_img{
     height: 250px;

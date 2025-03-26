@@ -12,61 +12,90 @@
     <header>
         <!-- yuxari qayitmaq btn -->
         <a id="top"></a>
-     <section id="navbar_area">
-        <div class="container nav">
-            <div class="logo"><h1>Estore<span>.</span></h1></div>
-            <div class="list">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="">Categori</a></li>
-                    <li>
-                        <a href="" class="txt">Latest</a>
+        <section id="navbar_area">
+            <div class="container nav">
+                <div class="logo"><h1>Estore<span>.</span></h1></div>
+                <div class="list">
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Categori</a></li>
+                        <li>
+                            <a href="" class="txt">Latest</a>
+                            <ul class="dropdown">
+                               <li><a href="product.list.html">Product List</a></li>
+                               <li><a href="product.details.html">Product Details</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">Blog</a>
+                            <ul class="dropdown">
+                               <li><a href="blog.html">Blog</a></li>
+                               <li><a href="blog.details.html">Blog Details</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">Pages</a>
+                            <ul class="dropdown">
+                               <li><a href="login.html">Login</a></li>
+                               <li><a href="">Card</a></li>
+                               <li><a href="">Element</a></li>
+                               <li><a href="">About</a></li>
+                               <li><a href="">Confirmation</a></li>
+                               <li><a href="shopping.cart.html">Shopping cart</a></li>
+                               <li><a href="">Product Checkout</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                    <span class="hot">Hot</span>
+                </div>
+                <div class="icon">
+                    <div class="input"><input type="text" placeholder="Search Products"></div>
+                    <i class="fas fa-search special-tag srch"></i>
+                    <i class="far fa-heart heart"></i> 
+                    <div class="count">02</div>
+                </div>
+                <div class="icon1">
+                     <div class="shop"><a href="shopping.cart.html"><i class="fas fa-shopping-cart shop"></i>
+                    </a></div>
+                    <div class="sign"><button class="btn">Sign in</button></div>
+                    <div class="count1">02</div>
+                </div>
+                <div class="sidebar" onclick="toggleMenu()">
+                    <span class="menu">Menu</span>
+    
+                    <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+                    <ul id="sidebar-menu" class="sidebar-menu">
+                        <li style="margin-left: 95px; font-size: 17px;"><a href="index.html"></a>Home</li>
+                        <li><a href="#"></a></li>
+                        <li class="dropdown-item"><a href="product.list.html"  style="color: white;">Latest</a>
+                            <ul class="dropdown">
+                                <li><a href="product.list.html">Product List</a></li>
+                                <li><a href="product.details.html">Product Details</a></li>
+                   </ul>
+                   </li>
+                        <li class="dropdown-item"><a href="blog.html"  style="color: white;">Blog</a>
                         <ul class="dropdown">
-                           <li><a href="product.list.html">Product List</a></li>
-                           <li><a href="product.details.html">Product Details</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="blog.details.html">Blog Details</a></li>
+                        </ul>
+                        </li>
+                        <li class="dropdown-item"><a href="shopping.cart.html"  style="color: white;">Pages</a>
+                        <ul class="dropdown">
+                         <li><a href="login.html">Login</a></li>
+                         <li><a href="">Card</a></li>
+                         <li><a href="">Element</a></li>
+                         <li><a href="">About</a></li>
+                         <li><a href="">Confirmation</a></li>
+                         <li><a href="shopping.cart.html">Shopping card</a></li>
+                         <li><a href="">Product Checkout</a></li>
                         </ul>
                     </li>
-                    <li>
-                        <a href="">Blog</a>
-                        <ul class="dropdown">
-                           <li><a href="blog.html">Blog</a></li>
-                           <li><a href="blog.details.html">Blog Details</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="">Pages</a>
-                        <ul class="dropdown">
-                           <li><a href="login.html">Login</a></li>
-                           <li><a href="">Card</a></li>
-                           <li><a href="">Element</a></li>
-                           <li><a href="">About</a></li>
-                           <li><a href="">Confirmation</a></li>
-                           <li><a href="shopping.cart.html">Shopping cart</a></li>
-                           <li><a href="">Product Checkout</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-                <div class="hot">Hot</div>
+                    <li><a href="contact.html"  style="color: white;">Contact</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="icon">
-                <div class="input"><input type="text" placeholder="Search Products"></div>
-                <i class="fas fa-search special-tag srch"></i>
-                <i class="far fa-heart heart"></i> 
-                <div class="count">02</div>
-            </div>
-            <div class="icon1">
-                 <div class="shop"><a href=""><i class="fas fa-shopping-cart shop"></i>
-                </a></div>
-                <div class="sign"><button class="btn">Sign in</button></div>
-                <div class="count1">02</div>
-            </div>
-            <div class="sidebar">
-                <span class="menu">Menu</span>
-                <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
-            </div>
-        </div>
-     </section>
+         </section>
     </header>
     <!-- header area end -->
       <!-- yuxari qayitmaq btn -->
@@ -173,4 +202,19 @@
                 </div>
             </section>
             </footer>
+            <script>
+                function toggleMenu() {
+                    var menu = document.getElementById("sidebar-menu");
+                    menu.classList.toggle("active");
+                }
+                
+                // Dropdown-ların açılıb bağlanması üçün
+                document.querySelectorAll(".dropdown-item > a").forEach(item => {
+                    item.addEventListener("click", function(event) {
+                        event.preventDefault(); // Linkin səhifəni yeniləməsinin qarşısını alır
+                        this.parentElement.classList.toggle("active");
+                    });
+                });
+                </script>
+    </body>
             <!-- footer end -->

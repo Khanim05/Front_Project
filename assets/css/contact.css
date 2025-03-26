@@ -62,7 +62,6 @@ ul{
 }
 #navbar_area ul li{
     display: inline-block;
-    position: relative;
 }
 #navbar_area ul li a{
     font-size: 17px;
@@ -80,11 +79,13 @@ ul li ul.dropdown li a{
     display: block;
 }
 ul li ul.dropdown {
-    width: 100px;
+    visibility: hidden;
+    width: 120px;
     background: rgb(248, 248, 248);
     position: absolute;
     z-index: 999;
     display: none;
+    padding: 10px 0;
 }
 .dropdown a{
     text-align: start;
@@ -94,15 +95,45 @@ ul li ul.dropdown {
     color: red;
 }
 ul li:hover ul.dropdown{
+    opacity: 1;
+    visibility: visible;
     border-top: 2px solid red !important;
     display: block;
+    
     color: red;
+}
+.sidebar-menu{
+    position: fixed;
+    top: 100px;
+    left: 0;
+    width: 250px;
+    height: auto;
+    background-color: rgb(54, 54, 54);
+    color: rgb(255, 255, 255);
+    display: none;
+    flex-direction: column;
+    padding: 10px;
+}
+.sidebar-menu.active{
+    display: flex;
+}
+.sidebar-menu a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+.sidebar-menu li a{
+    color: white;
+}
+.sidebar-menu a:hover{
+    background-color: rgb(248, 248, 248)
 }
 .hot{
     position: absolute;
     text-align: center;
-    top: 20px;
-    left: 420px;
+    bottom: 35px;
+    left: 220px;
     width: 40px;
     background-color: red;
     border-radius: 15px;
@@ -112,6 +143,7 @@ ul li:hover ul.dropdown{
    }
 .list{
     margin-left: 100px;
+    position: relative;
 }
 .logo{
     font-size: 30px;
@@ -124,7 +156,7 @@ ul li:hover ul.dropdown{
  .logo span{
     color: rgb(54, 54, 245);
  }
- #navbar_area input[type=text]{
+ input[type=text]{
     border-radius: 30px;
     padding: 8px;
     margin-top: 15px;
@@ -216,6 +248,9 @@ ul li:hover ul.dropdown{
     .icon{
         display: none;
     }
+    .nav{
+        padding: 0 40px;
+    }
 }
 @media screen and (max-width:996px){
     body,html{
@@ -235,7 +270,9 @@ ul li:hover ul.dropdown{
         border-radius: 7px;
         padding: 10px;
         margin-top: 50px;
+        cursor: pointer;
     }
+    
     .sign{
         display: none;
     }
@@ -248,13 +285,14 @@ ul li:hover ul.dropdown{
     .shop{
       position: absolute;
       bottom: 1px;
-      left: 70px;
+      left: 65px;
     }
     .count1{
         position: absolute;
-        left: 180px;
+        left: 165px;
         bottom: 20px;
     }
+
 }
 /* header area end */
 #map_area{

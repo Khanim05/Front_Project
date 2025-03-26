@@ -629,7 +629,10 @@ ul li:hover ul.dropdown{
     #best_area .best_lists{
         margin-top: 0;
         margin-left: 170px;
-    }       
+    }   
+    #best_area .best_lists .best_list p{
+        font-size: 15px;
+    }      
 }
 @media screen and (max-width:576px){
     #man_area{

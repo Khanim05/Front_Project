@@ -62,7 +62,6 @@ ul{
 }
 #navbar_area ul li{
     display: inline-block;
-    position: relative;
 }
 #navbar_area ul li a{
     font-size: 17px;
@@ -81,7 +80,7 @@ ul li ul.dropdown li a{
 }
 ul li ul.dropdown {
     visibility: hidden;
-    width: 100px;
+    width: 120px;
     background: rgb(248, 248, 248);
     position: absolute;
     z-index: 999;
@@ -110,7 +109,7 @@ ul li:hover ul.dropdown{
     width: 250px;
     height: auto;
     background-color: rgb(54, 54, 54);
-    color: white;
+    color: rgb(255, 255, 255);
     display: none;
     flex-direction: column;
     padding: 10px;
@@ -119,19 +118,22 @@ ul li:hover ul.dropdown{
     display: flex;
 }
 .sidebar-menu a{
-    color: white;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     padding: 10px;
     display: block;
 }
+.sidebar-menu li a{
+    color: white;
+}
 .sidebar-menu a:hover{
-    background: rgb(122, 122, 230);
+    background-color: rgb(248, 248, 248)
 }
 .hot{
     position: absolute;
     text-align: center;
-    top: 20px;
-    left: 420px;
+    bottom: 35px;
+    left: 220px;
     width: 40px;
     background-color: red;
     border-radius: 15px;
@@ -141,6 +143,7 @@ ul li:hover ul.dropdown{
    }
 .list{
     margin-left: 100px;
+    position: relative;
 }
 .logo{
     font-size: 30px;
@@ -153,7 +156,7 @@ ul li:hover ul.dropdown{
  .logo span{
     color: rgb(54, 54, 245);
  }
- #navbar_area input[type=text]{
+ input[type=text]{
     border-radius: 30px;
     padding: 8px;
     margin-top: 15px;
@@ -234,22 +237,19 @@ ul li:hover ul.dropdown{
     display: none;
 }
 @media screen and (min-width:1200px){
-    body,html{
-        overflow-x: hidden;
-    }
     .list{
         margin-left: 20px;
     }
 }
 @media screen and (max-width:1200px){
-    body,html{
-        overflow-x: hidden;
-    }
     .list{
         margin-left: 20px;
     }
     .icon{
         display: none;
+    }
+    .nav{
+        padding: 0 40px;
     }
 }
 @media screen and (max-width:996px){
@@ -285,13 +285,14 @@ ul li:hover ul.dropdown{
     .shop{
       position: absolute;
       bottom: 1px;
-      left: 70px;
+      left: 65px;
     }
     .count1{
         position: absolute;
-        left: 180px;
+        left: 165px;
         bottom: 20px;
     }
+
 }
 
 #blog_img{

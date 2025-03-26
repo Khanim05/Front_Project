@@ -12,12 +12,13 @@
     <header>
         <!-- yuxari qayitmaq btn -->
         <a id="top"></a>
+
      <section id="navbar_area">
         <div class="container nav">
             <div class="logo"><h1>Estore<span>.</span></h1></div>
             <div class="list">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="">Home</a></li>
                     <li><a href="">Categori</a></li>
                     <li>
                         <a href="" class="txt">Latest</a>
@@ -47,7 +48,7 @@
                     </li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
-                <div class="hot">Hot</div>
+                <span class="hot">Hot</span>
             </div>
             <div class="icon">
                 <div class="input"><input type="text" placeholder="Search Products"></div>
@@ -56,14 +57,43 @@
                 <div class="count">02</div>
             </div>
             <div class="icon1">
-                 <div class="shop"><a href=""><i class="fas fa-shopping-cart shop"></i>
+                 <div class="shop"><a href="shopping.cart.html"><i class="fas fa-shopping-cart shop"></i>
                 </a></div>
                 <div class="sign"><button class="btn">Sign in</button></div>
                 <div class="count1">02</div>
             </div>
-            <div class="sidebar">
+            <div class="sidebar" onclick="toggleMenu()">
                 <span class="menu">Menu</span>
+
                 <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+                <ul id="sidebar-menu" class="sidebar-menu">
+                    <li style="margin-left: 95px; font-size: 17px;"><a href="index.html"></a>Home</li>
+                    <li><a href="#"></a></li>
+                    <li class="dropdown-item"><a href="product.list.html"  style="color: white;">Latest</a>
+                        <ul class="dropdown">
+                            <li><a href="product.list.html">Product List</a></li>
+                            <li><a href="product.details.html">Product Details</a></li>
+               </ul>
+               </li>
+                    <li class="dropdown-item"><a href="blog.html"  style="color: white;">Blog</a>
+                    <ul class="dropdown">
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="blog.details.html">Blog Details</a></li>
+                    </ul>
+                    </li>
+                    <li class="dropdown-item"><a href="shopping.cart.html"  style="color: white;">Pages</a>
+                    <ul class="dropdown">
+                     <li><a href="login.html">Login</a></li>
+                     <li><a href="">Card</a></li>
+                     <li><a href="">Element</a></li>
+                     <li><a href="">About</a></li>
+                     <li><a href="">Confirmation</a></li>
+                     <li><a href="shopping.cart.html">Shopping card</a></li>
+                     <li><a href="">Product Checkout</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html"  style="color: white;">Contact</a></li>
+                </ul>
             </div>
         </div>
      </section>
@@ -72,11 +102,11 @@
 
     <!-- main hisse start -->
     <main>
-        <!-- yuxari qayitmaq btn -->
-        <a href="#top" class="scroll-top">
-            <button>↑</button>
-            </a>
-        <section id="main_area">
+    <!-- yuxari qayitmaq btn -->
+    <a href="#top" class="scroll-top">
+    <button>↑</button>
+    </a>
+        <section id="main_area"> 
             <div class="container main">
                 <div data-aos="fade-up-left"></div>
 
@@ -117,8 +147,6 @@
                         <b>New Collection</b>
                     </div>
                 </div>
-
-
             </div>
         </div>
     </section>
@@ -129,7 +157,7 @@
             <div class="latest_logo"><h1>Latest Products</h1></div>
             <div class="latest_list">
             <ul>
-                <li><a href="index.html#latest_area">All</a></li>
+                <li><a href="index.html#latest_area" >All</a></li>
                 <li><a href="new.html#latest_area" style="color: red;">New</a></li>
                 <li><a href="featured.html#latest_area">Featured</a></li>
                 <li><a href="offer.html#latest_area">Offer</a></li>
@@ -139,8 +167,8 @@
         <hr>
         <div class="container product">
           <div class="product_list">
-            <div class="new">New</div>
-            <div class="image1"><img src="assets/image/product4.png.webp" alt=""></div>
+            <span class="new">New</span>
+            <div class="image1"><img src="assets/image/product3.png.webp" alt=""></div>
             <div class="caption">
                 <div class="icon2">
                     <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
@@ -156,7 +184,7 @@
           </div>
 
           <div class="product_list">
-            <div class="image"><img src="assets/image/product5.png.webp" alt=""></div>
+            <div class="image"><img src="assets/image/product1.png.webp" alt=""></div>
             <div class="caption">
                 <div class="icon2">
                     <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
@@ -172,8 +200,8 @@
           </div>
 
           <div class="product_list">
-            <div class="new1">New</div>
-            <div class="image2"><img src="assets/image/product6.png.webp" alt=""></div>
+            <span class="new1">New</span>
+            <div class="image2"><img src="assets/image/product2.png.webp" alt=""></div>
             <div class="caption">
                 <div class="icon2">
                     <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
@@ -189,7 +217,7 @@
           </div>
 
           <div class="product_list">
-            <div class="image"><img src="assets/image/product2.png.webp" alt=""></div>
+            <div class="image"><img src="assets/image/product6.png.webp" alt=""></div>
             <div class="caption">
                 <div class="icon2">
                     <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
@@ -205,7 +233,7 @@
           </div>
 
           <div class="product_list">
-            <div class="image"><img src="assets/image/product3.png.webp" alt=""></div>
+            <div class="image"><img src="assets/image/product4.png.webp" alt=""></div>
             <div class="caption">
                 <div class="icon2">
                     <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
@@ -220,8 +248,8 @@
             </div>
           </div>
           <div class="product_list">
-            <div class="new2">New</div>
-            <div class="image3"><img src="assets/image/product1.png.webp" alt=""></div>
+            <span class="new2">New</span>
+            <div class="image3"><img src="assets/image/product5.png.webp" alt=""></div>
             <div class="caption">
                 <div class="icon2">
                     <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
@@ -322,10 +350,10 @@
         </div>
     </section>
 </main>
-<!-- main hisse son --> 
+<!-- <!- main hisse son -->   
 
 <!-- footer start -->
-<footer>
+ <footer>
 <section id="estore_area">
     <div class="container estore_area">
         <div class="estore1">
@@ -366,16 +394,30 @@
     <div class="container end">
         <div><p>Copyright ©2025 All rights reserved | This template is made with <i class="fa-regular fa-heart" style="color: #0091ff;"></i> by <a href="">Colorlib</a></p></div>
         <div class="ikon">
-            <a href=""><i class="fa-brands fa-twitter" style="color: #000000;"></i></a>
-            <a href=""><i class="fa-brands fa-facebook-f" style="color: #000000;"></i></a>
-            <a href=""><i class="fa-brands fa-behance" style="color: #000000;"></i></a>
-            <a href=""><i class="fa-solid fa-globe" style="color: #000000;"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-facebook-f" ></i></a>
+            <a href=""><i class="fa-brands fa-behance" ></i></a>
+            <a href=""><i class="fa-solid fa-globe"></i></a>
         </div>
     </div>
 </section>
 </footer>
-<!-- footer end -->
+<!-- footer end --> 
     
-
+<script>
+    function toggleMenu() {
+        var menu = document.getElementById("sidebar-menu");
+        menu.classList.toggle("active");
+    }
+    
+    // Dropdown-ların açılıb bağlanması üçün
+    document.querySelectorAll(".dropdown-item > a").forEach(item => {
+        item.addEventListener("click", function(event) {
+            event.preventDefault(); // Linkin səhifəni yeniləməsinin qarşısını alır
+            this.parentElement.classList.toggle("active");
+        });
+    });
+    </script>
 </body>
 </html>
+
