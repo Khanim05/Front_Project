@@ -781,40 +781,48 @@ img{
         display: flex;
         flex-wrap: wrap;
         justify-content: baseline;
+        
+    }
+    #end{
         padding: 0 20px;
     }
-    #end .end{
+    #estore_area{
         padding: 0 20px;
     }
+  
 
 }
-@media screen and (max-width:768px){
-    #end .end{
+@media screen and (max-width:768px){ 
+
+    #estore_area{
         padding: 0 20px;
+    }
+    #end .end{
+        padding: 0 10px;
         display: flex;
         gap: 15px;
         justify-content: start;
         flex-direction: column;
     }
+    #end .end .ikon{
+        margin-left: 20px;
+    }
 }
 @media screen and (max-width:576px){
+   
     #estore_area .estore1{
         width: 100%;
-    }
-    .estore1 p{
-        font-size: 17px;
-    }
-    #end .end{
-        padding: 0 20px;
-        margin-left: 50px;
-    }
-    #end .ikon{
-        padding: 0 25px;
-        margin-top: 20px;
+    } 
+    .estore1 h1{
+        margin-left: 5px;
     }
     .estore1{
-        margin-left: 68px;
+        margin-left: 55px;
     }
+    #end .end .ikon{
+        padding: 0 40px;
+    }
+
     
 }
 

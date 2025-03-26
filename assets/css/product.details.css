@@ -286,7 +286,7 @@ ul{
     #navbar_area .icon1{
         position:relative
     }
-    #navbar_area.shop{
+    #navbar_area .shop{
       position: absolute;
       bottom: 1px;
       left: 65px;
@@ -296,7 +296,6 @@ ul{
         left: 165px;
         bottom: 20px;
     }
-
 }
 /* product start */
 #product_img{
@@ -396,6 +395,70 @@ ul{
     transition: 0.3s;
 }
 
+@media screen and (max-width:1200px){
+    #filling_area{
+        padding: 0 40px;
+    }
+    #icon_area .icons{
+        margin-left: 0;
+    }
+    #icon_area button{
+        margin-left: 0;
+        margin-left: 120px;
+    }
+   #icon_area .umumi_icons{
+    margin-left: 400px;
+   }
+}
+@media screen and (max-width:992px){
+    #icon_area .icons{
+        margin-left: 0;
+    }
+    #icon_area button{
+        margin-left: 0;
+        margin-left: 120px;
+    }
+   #icon_area .umumi_icons{
+    margin-left: 250px;
+   }
+}
+@media screen and (max-width:768px){
+    #icon_area .icons{
+        margin-left: 0;
+    }
+    #icon_area button{
+        margin-left: 0;
+        margin-left: 120px;
+    }
+   #icon_area .umumi_icons{
+    margin-left: 150px;
+   }
+}
+@media screen and (max-width:576px){
+    #icon_area .icons{
+        margin-left: 0;
+    }
+    #icon_area button{
+        margin-left: 0;
+        margin-left: 120px;
+    }
+   #icon_area .umumi_icons{
+    margin-left: 70px;
+   }
+   #filling_area h1{
+    font-size: 35px;
+   }
+   #filling_area p{
+    opacity: 0.8;
+    font-size: 17px;
+   }
+}
+@media screen and (max-width:440px){
+       #icon_area .umumi_icons{
+            margin-left: 0;
+            margin-left: 35px;
+       }
+}
 #update_area{
     margin-top: 100px;
     height: 550px;
@@ -440,13 +503,15 @@ ul{
     height: 60px;
     padding:20px;
     border-radius: 30px;
-    position: relative;
     margin-right: 50px;
+}
+.update_forms{
+    position: relative;
 }
 .update_btn{
     font-size: 15px;
-    top: 2318px;
-    left: 767px;
+    top: 5px;
+    left:395px;
     border: none;
     width: 150px;
     height: 50px;
@@ -462,6 +527,31 @@ ul{
     background-color: white;
     color:rgb(0, 68, 255);
     transition: 0.3s;
+}
+@media screen and (max-width:576px){
+    .update input[type=email]{
+        width: 400px;
+    }
+    .update_forms{
+        margin-left: 50px;
+        margin-top: 30px;
+    }
+
+    .update p{
+        font-size: 15px;
+        line-height: 30px;
+    }
+    .update h2{
+        font-size: 30px;
+    }
+    .update_forms{
+        position: relative;
+    }
+    .update_btn{
+        position: absolute;
+        left: 0;
+        left: 245px;
+    }
 }
 
 #estore_area{
@@ -494,7 +584,6 @@ ul{
     margin-top: 40px;
 }
 .estore-links a{
-    margin-left: 70px;
     color:  rgb(122, 122, 122);
 }
 .estore-links a:hover{
@@ -512,7 +601,6 @@ ul{
     color: rgb(37, 56, 223);
 }
 .estore1 p{
-    margin-right: 20px;
     margin-top: 30px;
     line-height: 25px;
     font-size: 20px;
@@ -533,7 +621,14 @@ ul{
 }
 #end .ikon{
     display: flex;
-    gap:10px;
+    gap: 10px;
+    font-size: 15px;
+}
+.ikon i{
+    color: black;
+}
+.ikon i:hover{
+    color: #0091ff;
 }
 .end p{
     font-size: 20px;
@@ -542,6 +637,53 @@ ul{
 .end p a{
     color: #0091ff;
 }
+@media screen and (max-width:992px){
+    #estore_area .estore_area{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: baseline;
+        padding: 0 20px;
+    }
+    #end .end{
+        padding: 0 20px;
+    }
+
+}
+@media screen and (max-width:768px){
+    #end .end{
+        padding: 0 20px;
+        display: flex;
+        gap: 15px;
+        justify-content: start;
+        flex-direction: column;
+    }
+    #end .ikon{
+        margin-left: 20px;
+    }
+}
+@media screen and (max-width:576px){
+    #estore_area .estore1{
+        width: 100%;
+    }
+    .estore1 p{
+        font-size: 17px;
+    }
+    .estore1{
+        margin-left: 60px;
+    }
+    .estore1 p{
+        text-align: center;
+    }
+    .estore2 .estore-links{
+        margin-left: 70px;
+    }
+    #end .ikon{
+        margin-left: 10px;
+    }
+    
+}
+
+
  /* end area end */
 #single_area2{
     margin-top: 20px;
